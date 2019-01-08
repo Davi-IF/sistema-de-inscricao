@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscrição</title>
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+	<div class="w3-container w3-green">
+		<h2>Formulario de Inscrição</h2>
+	</div>
+	<br>
+	<form action="/sistema-inscricao/sistema-inscricao" method="post" class="w3-container" >
+			<div class="w3-row-padding">
+				<div class="w3-half">
+					<label class="w3-text-green"><b>Nome</b></label>
+					<input class="w3-input" type="text" placeholder="Digite aqui" name="nome">
+				</div>
+				<div class="w3-half">
+					<label class="w3-text-green"><b>Sobrenome</b></label>
+					<input class="w3-input" type="text" placeholder="Digite aqui" name="sobrenome">
+				</div>
+			</div>
+			<br>
+			<div class="w3-row-padding">
+				<div class="w3-half">
+					<label class="w3-text-green"><b>CEP</b></label>
+					<input class="w3-input" type="text" placeholder="00000-000" name="cep">
+				</div>
+				<div class="w3-half">
+					<label class="w3-text-green"><b>Endereço</b></label>
+					<input class="w3-input" type="text" placeholder="Rua X, N 123" name="endereco">
+				</div>
+			</div>
+			<br>
+			<div class="w3-row-padding">
+				<div class="w3-third">
+					<label class="w3-text-green"><b>RG</b></label>
+					<input class="w3-input" type="text" placeholder="Digite aqui" name="rg">
+				</div>
+				<div class="w3-third">
+					<label class="w3-text-green"><b>CPF</b></label>
+					<input class="w3-input" type="text" placeholder="123.456.789-00" name="cpf">
+				</div>
+				<div class="w3-third">
+					<label class="w3-text-green"><b>Titulo De Eleitor</b></label>
+					<input class="w3-input" type="text" placeholder="Digite aqui" name="titulo">
+				</div>
+			</div>
+			<br><br>
+			<input type="submit" class="w3-btn w3-green w3-round">
+	</form>
+</body>
+</html>
