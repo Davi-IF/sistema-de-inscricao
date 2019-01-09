@@ -14,5 +14,16 @@ public class BancoCadastro {
 	public List<Cadastro> getTodos(){
 		return BancoCadastro.banco;
 	}
+	
+	public boolean contem(Cadastro cad) {
+		for(Cadastro c : banco) {
+			if(c.getCpf().equals(cad.getCpf()) ||
+			   c.getRg().equals(cad.getRg()) ||
+			   c.getTitulo().equals(cad.getTitulo())) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 }

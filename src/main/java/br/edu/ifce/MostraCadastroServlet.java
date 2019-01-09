@@ -36,6 +36,8 @@ public class MostraCadastroServlet extends HttpServlet {
 		out.println("<th>Sobrenome</th>");
 		out.println("<th>CEP</th>");
 		out.println("<th>Endereço</th>");
+		out.println("<th>Cidade</th>");
+		out.println("<th>UF</th>");
 		out.println("<th>RG</th>");
 		out.println("<th>CPF</th>");
 		out.println("<th>Título de Eleitor</th></tr></thead>");
@@ -46,6 +48,8 @@ public class MostraCadastroServlet extends HttpServlet {
 				out.println("<th>"+ c.getSobrenome()+"</th>");
 				out.println("<th>"+ c.getCep()+"</th>");
 				out.println("<th>"+ c.getEndereco()+"</th>");
+				out.println("<th>"+ c.getCidade()+"</th>");
+				out.println("<th>"+ c.getEstado()+"</th>");
 				out.println("<th>"+ c.getRg()+"</th>");
 				out.println("<th>"+ c.getCpf()+"</th>");
 				out.println("<th>"+ c.getTitulo()+"</th>");
