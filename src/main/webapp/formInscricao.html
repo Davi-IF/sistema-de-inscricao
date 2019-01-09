@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-<title>InscriÃ§Ã£o</title>
+<meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<title>Inscrição</title>
 <link rel="stylesheet" href="w3.css">
 </head>
 <body>
 	<div class="w3-container w3-green">
-		<h2>Formulario de InscriÃ§Ã£o</h2>
+		<h2>Formulario de Inscrição</h2>
+		<i class="fas fa-user w3-display-topright w3-xxlarge w3-margin"></i>
 	</div>
 	<br>
-	<form action="/sistema-inscricao/sistema-inscricao" method="post" class="w3-container" >
+	<form action="/sistema-inscricao/sistema-inscricao" method="post" class="w3-container w3-card-4 w3-margin" >
 			<div class="w3-row-padding">
 				<div class="w3-half">
 					<label class="w3-text-green"><b>Nome</b></label>
@@ -28,7 +30,7 @@
 					<input class="w3-input" type="text" placeholder="00000-000" name="cep">
 				</div>
 				<div class="w3-half">
-					<label class="w3-text-green"><b>EndereÃ§o</b></label>
+					<label class="w3-text-green"><b>Endereço</b></label>
 					<input class="w3-input" type="text" placeholder="Rua X, N 123" name="endereco">
 				</div>
 			</div>
@@ -43,12 +45,16 @@
 					<input class="w3-input" type="text" placeholder="123.456.789-00" name="cpf">
 				</div>
 				<div class="w3-third">
-					<label class="w3-text-green"><b>Titulo De Eleitor</b></label>
+					<label class="w3-text-green"><b>Título De Eleitor</b></label>
 					<input class="w3-input" type="text" placeholder="Digite aqui" name="titulo">
 				</div>
 			</div>
 			<br><br>
-			<input type="submit" class="w3-btn w3-green w3-round">
-	</form>
+			<input type="submit" class="w3-btn w3-green w3-round w3-margin">
+			
+			<a href="/sistema-inscricao/mostrarCadastro">
+				<input value="Cadastrados" class="w3-btn w3-green w3-round w3-display-bottomright w3-margin">
+			</a>
+	</form> 
 </body>
 </html>
