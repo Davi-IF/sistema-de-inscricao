@@ -37,6 +37,8 @@ import br.com.caelum.stella.validation.TituloEleitoralValidator;
 public class SistemaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
+	/*Metodos usados para a comunicação 
+	 * com a API, atraves do JSON*/ 
 	private static String readAll(Reader rd) throws IOException {
 		StringBuilder sb = new StringBuilder();
 		int cp;
@@ -79,9 +81,12 @@ public class SistemaServlet extends HttpServlet {
 		String sobrenome = req.getParameter("sobrenome");
 		String cep = req.getParameter("cep");
 		
+		//tratamento para que o CEP esteja de acordo com a API
 		JSONObject json = null;
 		String cepJson = cep.replace(".", "").replace("-", "");
 		
+		/*try catch usado para receber o objeto JSON com as informações 
+		 * do cep fornecido*/
 		try {
 			json = readJsonFromUrl("https://viacep.com.br/ws/"+cepJson+"/json/");
 		} catch (JSONException e1) {
@@ -104,6 +109,8 @@ public class SistemaServlet extends HttpServlet {
 			return;
 		}
 		
+		
+		//Recebimento dos dados do formulario
 		String endereco = req.getParameter("endereco");
 		String rg = req.getParameter("rg");
 		

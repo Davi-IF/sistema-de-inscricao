@@ -2,6 +2,7 @@ package br.edu.ifce;
 
 public class Cadastro {
 	
+	//atributos 
 	private String nome;
 	private String sobrenome;
 	private String cep;
@@ -12,7 +13,7 @@ public class Cadastro {
 	private String cidade;
 	private String estado;
 	
-	
+	//metodos
 	public String getCidade() {
 		return cidade;
 	}
